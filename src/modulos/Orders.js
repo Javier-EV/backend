@@ -2,15 +2,15 @@ const mongoose = require("mongoose");
 
 const orderSchema = new  mongoose.Schema(
     {
-        almacen: {
+        warehouse: {
             type: String,
             requiered: true
         },
-        marca: {
+        brand: {
             type: String,
             requiered: true
         },
-        vendedor: {
+        seller: {
             type: String,
             requiered: true
         },
