@@ -2,27 +2,22 @@ const mongoose = require("mongoose");
 
 const orderSchema = new  mongoose.Schema(
     {
-        Name: {
+        almacen: {
             type: String,
             requiered: true
         },
-        Last_Name: {
+        marca: {
             type: String,
             requiered: true
         },
-        DeliveryAddress: {
+        vendedor: {
             type: String,
             requiered: true
         },
-        City: {
+        direccion: {
             type: String,
             requiered: true
         },
-        Phone: Number,
-        is_active: {
-            type: Boolean,
-            default: true
-          }
     },
     {timestamps: true}
 );
